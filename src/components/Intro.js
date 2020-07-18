@@ -54,11 +54,7 @@ const Intro = () => (
     <div>
     <div class="list">
     <Int>
-        <p>Glad that i am here at this point,after consuming all about the market scenario,
-        I have to switch my chosen field of mechanical to IT. Struggling to earn a better carrier just
-        not to fullfil my own dream but all for my family.
-        It's gonna too hard to survive  and make up with the scope i have chosen but after all the dream i saw with my open eyes 
-        will come True one day.</p>
+        <p>This page will be maintained soon!!</p>
         <br />
     </Int>
     </div>
