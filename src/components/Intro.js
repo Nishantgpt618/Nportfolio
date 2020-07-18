@@ -88,6 +88,7 @@ const Box2 = styled.div`
     margin-top: 5em;
     background: grey;
     color: white;
+    font-size: 10px;
 
 
     img {
