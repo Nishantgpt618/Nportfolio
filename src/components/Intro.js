@@ -39,6 +39,7 @@ const Box1 = styled.div`
     color: white;
     text-align: center;
 
+
    
 
 
@@ -55,7 +56,6 @@ const Box1 = styled.div`
     background: grey;
     color: white;
     font-size: 10px;
-
    
 
 
@@ -73,7 +73,7 @@ const Box2 = styled.div`
     margin-top: 5em;
     background: grey;
     color: white;
-    font-size: 10px;
+    
 
 
     img {
