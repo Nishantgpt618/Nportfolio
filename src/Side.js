@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { Component } from 'react';
+import { HashRouter, Route, Link } from "react-router-dom";
 import styled from 'styled-components'
 import logo from './media/profile.png'
 import fb from './media/Facebook.png'
@@ -6,6 +7,7 @@ import insta from './media/Instagram.png'
 import linkedin from './media/Linkedin.png'
 import frame from './media/logo512.png'
 import './Side.css'
+
 
 
 const Sidep = styled.div`
@@ -48,19 +50,19 @@ const Sidep = styled.div`
 const Side = () => (
     <Sidep class="backg">
           <img id="frame" src={frame} alt="Frame"/><br />
-          <a href="/"><img id="profile" src={logo} alt="logo"/></a>
+          <Link to="/"><img id="profile" src={logo} alt="logo"/></Link>
           <br />
           <br />
           <h3>Nishant Gupta</h3>
           <br />
           <p>Nishantgpt618@gmail.com</p>
-          <a href="/Intro">Introduction</a>
+          <Link to="/Intro">Introduction</Link>
           <br />
           <br />
-          <a href="/about">About</a>
+          <Link to="/about">About</Link>
           <br />
           <br />
-          <a href="/timeline">Timeline</a>
+          <Link to="/timeline">Timeline</Link>
           <br />
           <br />
           <a href="https://www.facebook.com/nishurocks/"><img src={fb} alt="logo" /></a>
@@ -68,7 +70,7 @@ const Side = () => (
           <a href="https://www.instagram.com/nishantgpt618/"><img src={insta} alt="logo" /></a>
           <br />
           <a href="https://www.linkedin.com/in/nishant-gupta-a30a3212b/"><img src={linkedin} alt="logo" /></a>
-          
+         
 
 
         </Sidep>
