@@ -15,6 +15,24 @@ const Wrapper = styled.div`
     font-family: cursive;
     color: black;
   }
+
+  @media screen and (max-width:321px){
+    margin-top: 1em;
+  margin-left: 12em;
+  margin-right: 6em;
+  text-align: left;
+  color: blue;
+  width: 50%
+  font-size: 0.8em;
+
+  h1{
+    font-size: 1em;
+    text-align: center;
+    font-family: cursive;
+    color: black;
+  }
+
+  }
 `;
 
 export const Timeline = () => (

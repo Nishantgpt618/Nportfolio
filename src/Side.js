@@ -45,6 +45,50 @@ const Sidep = styled.div`
     font-family: 'Odibee Sans', cursive;
     font-size: 1.5em;
   }
+
+  @media screen and (max-width:321px){
+    position: fixed;     /* Fixed Sidebar (stay in place on scroll and position relative to viewport) */
+  height: 100%;
+  width: 150px;     /* Set the width of the sidebar */
+  z-index: 1;      /* Stay on top of everything */
+  top: 0.1em;      /* Stay at the top */
+  overflow-x: hidden;     /* Disable horizontal scroll */
+  text-align: center;
+  color: black;
+
+
+  #profile{
+        padding-top: 1em;
+        height: 100px;
+        text-align: center;
+    }
+  img{
+    padding-top: 1em;
+        height: 50px;
+        text-align: center;
+        
+        
+  }
+  
+  h3{
+    font-family: 'Sriracha', cursive;
+  }
+  p{
+    font-family: 'Noto Sans JP ', sans-serif;
+    font-size: 0.7em;
+  }
+  a{
+    font-family: 'Odibee Sans', cursive;
+    font-size: 1.5em;
+  }
+  #frame {
+    height: 100px;
+  }
+  Link{
+    font-size: 0.7em;
+  }
+
+}
 `;
 
 const Side = () => (

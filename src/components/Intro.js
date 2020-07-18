@@ -14,6 +14,18 @@ const Int = styled.div`
     font-size: 20px;
     color: black;
     font-family: cursive;
+
+
+    @media screen and (max-width:321px){
+        margin-top: 1em;
+        margin-left: 15em;
+        margin-right: 6em;
+        display: grid;
+        width: 100%;
+        font-size: 10px;
+        color: black;
+        font-family: cursive;
+    }
         
 `;
 
@@ -25,12 +37,31 @@ const Box1 = styled.div`
     margin-top: 2em;
     background: grey;
     color: white;
+    text-align: center;
 
    
 
 
     img {
         margin-top: -34px;
+    }
+
+    @media screen and (max-width:321px){
+        width: 170px;
+    height: 200px;
+    border: solid 1px black;
+    margin-left: 15em;
+    margin-top: 2em;
+    background: grey;
+    color: white;
+    font-size: 10px;
+
+   
+
+
+    img {
+        margin-top: -34px;
+    }
     }
 
 `;
@@ -42,12 +73,28 @@ const Box2 = styled.div`
     margin-top: 5em;
     background: grey;
     color: white;
+    font-size: 10px;
 
 
     img {
         margin-top: -34px;
     }
 
+    @media screen and (max-width:321px){
+        width: 170px;
+    height: 200px;
+    border: solid 1px black;
+    margin-left: 15em;
+    margin-top: 5em;
+    background: grey;
+    color: white;
+
+
+    img {
+        margin-top: -34px;
+    }
+    }
+    
 `;
 
 const Intro = () => (

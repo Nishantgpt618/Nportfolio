@@ -1,31 +1,10 @@
-#anim {
-    animation-duration: 3s;
-    animation-name: slidein;
-    
-}
+
 
 #anim:hover{
   border: solid 5px black;
 }
 
   
-  @keyframes slidein {
-    from {
-        margin-left: 1000px;
-        width: 300px;
-        
-        
-      }
-      
-    
-      to {
-        margin-left: 320px;
-        width: 300px;
-        height: 200px;
-        
-      }
-    
-  }
 
   .list {
       display: flex;

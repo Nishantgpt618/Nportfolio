@@ -13,6 +13,24 @@ const GridWrapper = styled.div`
   P{
     font-size: 20px;
   }
+
+  @media screen and (max-width:321px){
+    margin-top: 1em;
+  margin-left: 10em;
+  margin-right: 6em;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(25px, auto);
+  text-align: left;
+  font-family: cursive;
+
+  P{
+    font-size: 10px;
+  }
+  h1{
+    font-size: 15px;
+  }
+  }
+
 `;
 
 export const About = () => (
@@ -30,7 +48,8 @@ export const About = () => (
       <li><h1>Percentage:</h1> 64%</li>
     </ul>
     <br />
-
+    
+    
     
     </p>
     

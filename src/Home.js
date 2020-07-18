@@ -9,6 +9,15 @@ const GridWrapper = styled.div`
   grid-auto-rows: minmax(25px, auto);
   font-family: 'Sriracha', cursive;
   font-size: 20px;
+
+
+  @media screen and (max-width:321px){
+    margin-top: 1em;
+  margin-left: 15em;
+  margin-right: 6em;
+  font-family: 'Sriracha', cursive;
+  font-size: 10px;
+  }
 `;
 
 export const Home = (props) => (
@@ -17,6 +26,18 @@ export const Home = (props) => (
     <p>Welcome to my portfolio</p>
     <p>Feel free to navigate to other pages though the side navigation bar</p>
     <p>You can contact me via whatsapp,facebook,instagram,linkedin</p>
-    <p>Contact number: 8791225390,8077220024</p>
+    <p>Contact number: 8791225390,  8077220024</p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   </GridWrapper>
 )
