@@ -128,6 +128,19 @@ const Intro = () => (
             <li>Java</li>
         </ul>
     </Box2>
+    <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        
     </div>
     </div>
 )
