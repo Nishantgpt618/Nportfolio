@@ -9,7 +9,7 @@ body{
 
 
 
-@media screen and (max-width:321px) {
+@media screen and (max-width:361px) {
 
     body{
         background-image: url(media/bg320.jpg);
