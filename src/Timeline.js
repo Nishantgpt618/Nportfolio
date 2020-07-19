@@ -17,7 +17,7 @@ const Wrapper = styled.div`
     font-size: 4em;
   }
 
-  @media screen and (max-width:412px){
+  @media screen and (max-width:1081px){
     margin-top: 8em;
   margin-left: 5em;
   margin-right: 5em;
