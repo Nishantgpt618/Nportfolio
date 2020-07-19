@@ -14,22 +14,23 @@ const Wrapper = styled.div`
     text-align: center;
     font-family: cursive;
     color: black;
+    font-size: 4em;
   }
 
   @media screen and (max-width:321px){
-    margin-top: 1em;
-  margin-left: 12em;
-  margin-right: 6em;
+    margin-top: 8em;
+  margin-left: 5em;
+  margin-right: 5em;
   text-align: left;
-  color: blue;
-  width: 50%
+  color: black;
+  width: 70%
   font-size: 0.8em;
 
   h1{
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: center;
     font-family: cursive;
-    color: black;
+    color: brown;
   }
 
   }

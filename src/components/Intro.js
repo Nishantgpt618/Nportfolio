@@ -17,14 +17,19 @@ const Int = styled.div`
 
 
     @media screen and (max-width:321px){
-        margin-top: 1em;
-        margin-left: 15em;
-        margin-right: 6em;
+        margin-top: 10em;
+        margin-left: 1em;
+        margin-right: 1em;
         display: grid;
         width: 100%;
         font-size: 10px;
         color: black;
         font-family: cursive;
+        
+        
+        p{
+            font-size: 15px;
+        }
     }
         
 `;
@@ -48,11 +53,11 @@ const Box1 = styled.div`
     }
 
     @media screen and (max-width:321px){
-        width: 170px;
+        width: 200px;
     height: 200px;
     border: solid 1px black;
-    margin-left: 15em;
-    margin-top: 2em;
+    margin-left: 7em;
+    margin-top: 10em;
     background: grey;
     color: white;
     font-size: 10px;
@@ -81,11 +86,11 @@ const Box2 = styled.div`
     }
 
     @media screen and (max-width:321px){
-        width: 170px;
+        width: 200px;
     height: 200px;
     border: solid 1px black;
-    margin-left: 15em;
-    margin-top: 5em;
+    margin-left: 7em;
+    margin-top: 7em;
     background: grey;
     color: white;
     font-size: 10px;

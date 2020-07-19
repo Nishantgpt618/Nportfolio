@@ -15,9 +15,9 @@ const GridWrapper = styled.div`
   }
 
   @media screen and (max-width:321px){
-    margin-top: 1em;
-  margin-left: 10em;
-  margin-right: 6em;
+    margin-top: 5em;
+  margin-left: 5em;
+  margin-right: 5em;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: minmax(25px, auto);
   text-align: left;
@@ -28,6 +28,7 @@ const GridWrapper = styled.div`
   }
   h1{
     font-size: 15px;
+    color: brown;
   }
   }
 

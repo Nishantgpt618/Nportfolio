@@ -48,23 +48,27 @@ const Sidep = styled.div`
 
   @media screen and (max-width:321px){
     position: fixed;     /* Fixed Sidebar (stay in place on scroll and position relative to viewport) */
-  height: 100%;
-  width: 150px;     /* Set the width of the sidebar */
-  z-index: 1;      /* Stay on top of everything */
-  top: 0.1em;      /* Stay at the top */
+  height: 45px;
+  width: 100%;     /* Set the width of the sidebar */
+  z-index: 1;      /* Stay on top of everything */      /* Stay at the top */
   overflow-x: hidden;     /* Disable horizontal scroll */
   text-align: center;
-  color: black;
+  margin-top: -2px;
+  color: black
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: orange;
 
 
   #profile{
-        padding-top: 1em;
-        height: 100px;
+    margin-top: -20px;
+        height: 60px;
         text-align: center;
     }
   img{
     padding-top: 1em;
-        height: 50px;
+        height: 0px;
         text-align: center;
         
         
@@ -72,17 +76,18 @@ const Sidep = styled.div`
   
   h3{
     font-family: 'Sriracha', cursive;
+    font-size: 0em;
   }
   p{
     font-family: 'Noto Sans JP ', sans-serif;
-    font-size: 0.7em;
+    font-size: 0em;
   }
   a{
     font-family: 'Odibee Sans', cursive;
     font-size: 1.5em;
   }
   #frame {
-    height: 100px;
+    height: 10px;
   }
   Link{
     font-size: 0.7em;

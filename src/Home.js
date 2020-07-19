@@ -12,11 +12,11 @@ const GridWrapper = styled.div`
 
 
   @media screen and (max-width:321px){
-    margin-top: 1em;
-  margin-left: 15em;
-  margin-right: 6em;
+    margin-top: 5em;
+  margin-left: 1em;
+  margin-right: 1em;
   font-family: 'Sriracha', cursive;
-  font-size: 10px;
+  font-size: 15px;
   }
 `;
 
