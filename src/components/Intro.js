@@ -16,7 +16,7 @@ const Int = styled.div`
     font-family: cursive;
 
 
-    @media screen and (max-width:361px){
+    @media screen and (max-width:412px){
         margin-top: 10em;
         margin-left: 1em;
         margin-right: 1em;
@@ -52,7 +52,7 @@ const Box1 = styled.div`
         margin-top: -34px;
     }
 
-    @media screen and (max-width:361px){
+    @media screen and (max-width:412px){
         width: 200px;
     height: 200px;
     border: solid 1px black;
@@ -85,7 +85,7 @@ const Box2 = styled.div`
         margin-top: -34px;
     }
 
-    @media screen and (max-width:361px){
+    @media screen and (max-width:412px){
         width: 200px;
     height: 200px;
     border: solid 1px black;

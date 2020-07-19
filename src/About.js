@@ -14,7 +14,7 @@ const GridWrapper = styled.div`
     font-size: 20px;
   }
 
-  @media screen and (max-width:361px){
+  @media screen and (max-width:412px){
     margin-top: 5em;
   margin-left: 5em;
   margin-right: 5em;

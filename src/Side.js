@@ -46,7 +46,7 @@ const Sidep = styled.div`
     font-size: 1.5em;
   }
 
-  @media screen and (max-width:361px){
+  @media screen and (max-width:412px){
     position: fixed;     /* Fixed Sidebar (stay in place on scroll and position relative to viewport) */
   height: 45px;
   width: 100%;     /* Set the width of the sidebar */
