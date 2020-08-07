@@ -26,12 +26,10 @@ const Sidep = styled.div`
         height: 150px;
         text-align: center;
     }
-  img{
+  .social {
     padding-top: 1em;
         height: 40px;
-        text-align: center;
-        
-        
+        text-align: center;  
   }
   
   h3{
@@ -114,11 +112,17 @@ const Side = () => (
           <Link to="/timeline">Timeline</Link>
           <br />
           <br />
-          <a href="https://www.facebook.com/nishurocks/"><img src={fb} alt="logo" /></a>
+          <Link to="/contact">Contact Form</Link>
           <br />
-          <a href="https://www.instagram.com/nishantgpt618/"><img src={insta} alt="logo" /></a>
           <br />
-          <a href="https://www.linkedin.com/in/nishant-gupta-a30a3212b/"><img src={linkedin} alt="logo" /></a>
+          <a href="https://www.facebook.com/nishurocks/"><img className="social" src={fb} alt="logo" /></a>
+          <br />
+          <a href="https://www.instagram.com/nishantgpt618/"><img className="social" src={insta} alt="logo" /></a>
+          <br />
+          <a href="https://www.linkedin.com/in/nishant-gupta-a30a3212b/"><img className="social"  src={linkedin} alt="logo" /></a>
+          <br />
+          <br />
+          
          
 
 

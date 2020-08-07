@@ -6,15 +6,19 @@ const Wrapper = styled.div`
   margin-left: 15em;
   margin-right: 6em;
   text-align: left;
-  color: blue;
+  color: black;
   width: 50%
   font-size: 1.1em;
+
+  .visible {
+    color: white;
+  }
 
   h1{
     text-align: center;
     font-family: cursive;
     color: black;
-    font-size: 4em;
+    font-size: 2em;
   }
 
   @media screen and (max-width:1081px){
@@ -54,6 +58,7 @@ export const Timeline = () => (
       <li>Mahindra CIE Automotive Ltd. is the one of the leading manufacturers of alloy steel and special steel products in India and has its Steel Plant in Khapoli, Maharashtra. MCIE is also in the business of Stampings (Pressed Sheet Metal components, Welded Assy. & painted) and is the leading player in this segment in India.</li>
       <li>Clients: - M&M Ltd (FES), M&M Ltd. (Auto Sector), TATA MOTOR Ltd, Ashok Leyland</li>
     </ul><br />
+    <div className="visible">
     <h1>Achievments</h1><br />
     <ul>
       <li>Awarded with “STAR PERFORMER” for successfully completing the Project “Spare Wheel Wrong Bolt Elimination through Proximity Sensor”.</li>
@@ -70,7 +75,8 @@ export const Timeline = () => (
       <li>Manpower handling to ensure timely delivery of appointed work.</li>
       <li>Dealing with breakdowns online and offline.</li>
       <li>Taking care of the documentations necessary in Department.</li>
-    </ul><br />
+    </ul>
+    </div><br />
     <h1>Past Working:</h1><br />
     I have worked with CLGupta Export ltd. as a Quality Assurance GET From 20th June 2018 to 
 29th December 2018. <br />

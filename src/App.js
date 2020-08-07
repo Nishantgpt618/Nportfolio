@@ -6,7 +6,8 @@ import Side from './Side';
 import { Home } from './Home';
 import { About } from './About';
 import { Timeline } from './Timeline';
-import Intro from './components/Intro'
+import { Contactform } from "./Form";
+import Intro from './components/Intro';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/intro" component={Intro} />
         <Route path="/about" component={About} />
         <Route path="/timeline" component={Timeline} />
+        <Route path="/contact" component={Contactform} />
       </div>
       </HashRouter>
       </React.Fragment>
