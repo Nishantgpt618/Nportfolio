@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { HashRouter, Route, Link } from "react-router-dom";
+import React from 'react';
+import { Link } from "react-router-dom";
 import styled from 'styled-components'
 import logo from './media/profile.png'
 import fb from './media/Facebook.png'
@@ -11,6 +11,7 @@ import './Side.css'
 
 
 const Sidep = styled.div`
+  @media screen and (min-width:1081px){
   position: fixed;     /* Fixed Sidebar (stay in place on scroll and position relative to viewport) */
   height: 100%;
   width: 250px;     /* Set the width of the sidebar */
@@ -19,6 +20,12 @@ const Sidep = styled.div`
   overflow-x: hidden;     /* Disable horizontal scroll */
   text-align: center;
   color: black;
+ 
+  #frame {
+    height: 200px;
+    width: 200px;
+    align-items: center;
+  }
 
 
   #profile{
@@ -43,49 +50,45 @@ const Sidep = styled.div`
     font-family: 'Odibee Sans', cursive;
     font-size: 1.5em;
   }
-
-  @media screen and (max-width:1081px){
-    position: fixed;     /* Fixed Sidebar (stay in place on scroll and position relative to viewport) */
+  }
+@media screen and (max-width:1081px){
+  position: fixed;     /* Fixed Sidebar (stay in place on scroll and position relative to viewport) */
   height: 45px;
   width: 100%;     /* Set the width of the sidebar */
   z-index: 1;      /* Stay on top of everything */      /* Stay at the top */
   overflow-x: hidden;     /* Disable horizontal scroll */
-  text-align: center;
-  margin-top: -2px;
-  color: black
+  color: black;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   background: orange;
+  justify-content: space-around;
+  
+
+  .frame {
+    display: none;
+  }
 
 
   #profile{
-    margin-top: -20px;
-        height: 60px;
-        text-align: center;
+    height: 40px;
     }
-  img{
-    padding-top: 1em;
-        height: 0px;
-        text-align: center;
-        
-        
+
+    
+  .social {
+    height: 0px;
   }
   
   h3{
-    font-family: 'Sriracha', cursive;
     font-size: 0em;
   }
   p{
-    font-family: 'Noto Sans JP ', sans-serif;
     font-size: 0em;
   }
   a{
     font-family: 'Odibee Sans', cursive;
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   #frame {
-    height: 10px;
+    height: 0px;
   }
   Link{
     font-size: 0.7em;
@@ -94,6 +97,7 @@ const Sidep = styled.div`
 }
 `;
 
+            
 const Side = () => (
     <Sidep class="backg">
           <img id="frame" src={frame} alt="Frame"/><br />
@@ -112,7 +116,7 @@ const Side = () => (
           <Link to="/timeline">Timeline</Link>
           <br />
           <br />
-          <Link to="/contact">Contact Form</Link>
+          <Link to="/contact">Contact-Form</Link>
           <br />
           <br />
           <a href="https://www.facebook.com/nishurocks/"><img className="social" src={fb} alt="logo" /></a>
@@ -122,7 +126,7 @@ const Side = () => (
           <a href="https://www.linkedin.com/in/nishant-gupta-a30a3212b/"><img className="social"  src={linkedin} alt="logo" /></a>
           <br />
           <br />
-          
+
          
 
 

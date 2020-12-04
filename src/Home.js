@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 
 const GridWrapper = styled.div`
+ @media screen and (min-width:1081px){
   margin-top: 1em;
   margin-left: 15em;
   margin-right: 6em;
@@ -10,10 +11,11 @@ const GridWrapper = styled.div`
   grid-auto-rows: minmax(25px, auto);
   font-family: 'Sriracha', cursive;
   font-size: 20px;
+ }
 
 
   @media screen and (max-width:1081px){
-    margin-top: 5em;
+   
   margin-left: 1em;
   margin-right: 1em;
   font-family: 'Sriracha', cursive;

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const GridWrapper = styled.div`
+ @media screen and (min-width:1081px){
   margin-top: 1em;
   margin-left: 20em;
   margin-right: 6em;
@@ -13,11 +14,13 @@ const GridWrapper = styled.div`
   P{
     font-size: 20px;
   }
+ }
 
   @media screen and (max-width:1081px){
-    margin-top: 5em;
-  margin-left: 5em;
+
+  margin-left: 4em;
   margin-right: 5em;
+  padding-top: 50px;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: minmax(25px, auto);
   text-align: left;

@@ -6,6 +6,7 @@ import './css/Intr.css'
 
 
 const Int = styled.div`
+@media screen and (min-width:1081px){
     margin-top: 1em;
     margin-left: 15em;
     margin-right: 6em;
@@ -14,6 +15,7 @@ const Int = styled.div`
     font-size: 20px;
     color: black;
     font-family: cursive;
+}
 
 
     @media screen and (max-width:1081px){

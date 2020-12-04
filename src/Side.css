@@ -1,18 +1,16 @@
 a{
-    color: white;
+    color: black;
 }
 
 a:hover{
-    color: black;
+    color: blue;
     
 }
 
 
-#frame {
-    height: 200px;
-    width: 200px;
-    align-items: center;
-  }
+
+
+
 
 
     #frame {

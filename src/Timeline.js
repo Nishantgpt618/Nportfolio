@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
+@media screen and (min-width:1081px){
   margin-top: 1em;
   margin-left: 15em;
   margin-right: 6em;
@@ -20,21 +21,26 @@ const Wrapper = styled.div`
     color: black;
     font-size: 2em;
   }
+}
 
   @media screen and (max-width:1081px){
-    margin-top: 8em;
+    padding-top: 50px;
   margin-left: 5em;
   margin-right: 5em;
   text-align: left;
   color: black;
   width: 70%
-  font-size: 0.8em;
+  font-size: 10px;
 
   h1{
-    font-size: 1.5em;
+    font-size: 15px;
     text-align: center;
     font-family: cursive;
     color: brown;
+  }
+
+  ul {
+    margin-left: -30px;
   }
 
   }
