@@ -6,100 +6,15 @@ import './css/Intr.css'
 
 
 const Int = styled.div`
-@media screen and (min-width:1081px){
-    position: fixed;     /* Fixed Sidebar (stay in place on scroll and position relative to viewport) */
-    height: 100%;
-    width: 300px;     /* Set the width of the sidebar */
-    z-index: 1;      /* Stay on top of everything */
-    top: 0.1em;      /* Stay at the top */
-    overflow-x: hidden;     /* Disable horizontal scroll */
-    text-align: center;
+    margin-top: 1em;
+    margin-left: 15em;
+    margin-right: 6em;
+    display: grid;
+    width: 100%;
+    font-size: 20px;
     color: black;
-    a{
-      color: black;
-  }
-  
-    a:hover{
-      color: blue;
-      
-  }
-   
-    #frame {
-      height: 200px;
-      width: 200px;
-      align-items: center;
-    }
-  
-  
-    #profile{
-          padding-top: 1em;
-          height: 150px;
-          text-align: center;
-      }
-    .social {
-      padding-top: 1em;
-          height: 70px;
-          text-align: center;  
-    }
-    
-    h3{
-      font-family: 'Sriracha', cursive;
-    }
-    p{
-      font-family: 'Noto Sans JP ', sans-serif;
-      font-size: 1em;
-    }
-    a{
-      font-family: 'Odibee Sans', cursive;
-      font-size: 1.5em;
-    }
-    }
-  @media screen and (max-width:1081px){
-    position: fixed;     /* Fixed Sidebar (stay in place on scroll and position relative to viewport) */
-    height: 45px;
-    width: 100%;     /* Set the width of the sidebar */
-    z-index: 1;      /* Stay on top of everything */      /* Stay at the top */
-    overflow-x: hidden;     /* Disable horizontal scroll */
-    color: white;
-    display: flex;
-    background: black;
-    justify-content: space-around;
-  
-  
-    
-  
-    .frame {
-      display: none;
-    }
-  
-  
-    #profile{
-      height: 40px;
-      }
-  
-      
-    .social {
-      display: none;
-    }
-    
-    h3{
-      display: none;
-    }
-    p{
-      display: none;
-    }
-    a{
-      font-family: 'Odibee Sans', cursive;
-      font-size: 1.3em;
-    }
-    #frame {
-      display: none;
-    }
-    Link{
-      font-size: 0.7em;
-    }
-  
-  }
+    font-family: cursive;
+        
 `;
 
 const Box1 = styled.div`
@@ -110,31 +25,12 @@ const Box1 = styled.div`
     margin-top: 2em;
     background: grey;
     color: white;
-    text-align: center;
-
 
    
 
 
     img {
         margin-top: -34px;
-    }
-
-    @media screen and (max-width:1081px){
-        width: 200px;
-    height: 200px;
-    border: solid 1px black;
-    margin-left: 7em;
-    margin-top: 10em;
-    background: grey;
-    color: white;
-    font-size: 10px;
-   
-
-
-    img {
-        margin-top: -34px;
-    }
     }
 
 `;
@@ -146,36 +42,23 @@ const Box2 = styled.div`
     margin-top: 5em;
     background: grey;
     color: white;
-    
 
 
     img {
         margin-top: -34px;
     }
 
-    @media screen and (max-width:1081px){
-        width: 200px;
-    height: 200px;
-    border: solid 1px black;
-    margin-left: 7em;
-    margin-top: 7em;
-    background: grey;
-    color: white;
-    font-size: 10px;
-
-
-    img {
-        margin-top: -34px;
-    }
-    }
-    
 `;
 
 const Intro = () => (
     <div>
     <div class="list">
     <Int>
-        <p>This page will be maintained soon!!</p>
+        <p>Glad that i am here at this point,after consuming all about the market scenario,
+        I have to switch my chosen field of mechanical to IT. Struggling to earn a better carrier just
+        not to fullfil my own dream but all for my family.
+        It's gonna too hard to survive  and make up with the scope i have chosen but after all the dream i saw with my open eyes 
+        will come True one day.</p>
         <br />
     </Int>
     </div>
@@ -201,19 +84,6 @@ const Intro = () => (
             <li>Java</li>
         </ul>
     </Box2>
-    <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        
     </div>
     </div>
 )
