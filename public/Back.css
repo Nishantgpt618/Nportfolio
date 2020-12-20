@@ -1,15 +1,8 @@
-body{
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
-    height: auto;
-    font-family: 'Sriracha', cursive;
-}
 
 
 
-@media screen and (max-width:1101px) {
+
+@media screen and (max-width:1081px) {
 
     body{
         background-image: url(media/bg320.jpg);
