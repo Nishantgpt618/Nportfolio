@@ -27,7 +27,7 @@ export class Contactform extends React.Component {
         	placeholder="Type your Name here"
         	required
         	value={this.state.name}
-			style={{width: '70%', height: '50px'}}
+			style={{width: '50%', height: '50px'}}
         	
       	/>
 		  <br />
@@ -40,7 +40,7 @@ export class Contactform extends React.Component {
         	placeholder="Type your message here"
         	required
         	value={this.state.feedback}
-			style={{width: '70%', height: '50px'}}
+			style={{width: '50%', height: '50px'}}
         	
       	/>
 		  <br />
@@ -54,7 +54,7 @@ export class Contactform extends React.Component {
         	placeholder="Type your mail Id here"
         	required
         	value={this.state.email}
-			style={{width: '70%', height: '50px'}}
+			style={{width: '50%', height: '50px'}}
         
       	/>
     	</div>

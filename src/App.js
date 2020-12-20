@@ -7,7 +7,8 @@ import { Home } from './Home';
 import { About } from './About';
 import { Timeline } from './Timeline';
 import { Contactform } from "./Form";
-import Intro from './components/Intro';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <div>
         <Side />
         <Route exact path="/" component={Home} />
-        <Route path="/intro" component={Intro} />
+        {/* <Route path="/intro" component={Intro} /> */}
         <Route path="/about" component={About} />
         <Route path="/timeline" component={Timeline} />
         <Route path="/contact" component={Contactform} />

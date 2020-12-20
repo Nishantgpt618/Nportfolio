@@ -7,19 +7,28 @@ import insta from './media/Instagram.png'
 import linkedin from './media/Linkedin.png'
 import frame from './media/logo512.png'
 import './Side.css'
+import { Navbar, Nav } from 'react-bootstrap';
 
 
 
 const Sidep = styled.div`
-  @media screen and (min-width:1081px){
+@media screen and (min-width:1081px){
   position: fixed;     /* Fixed Sidebar (stay in place on scroll and position relative to viewport) */
   height: 100%;
-  width: 250px;     /* Set the width of the sidebar */
+  width: 300px;     /* Set the width of the sidebar */
   z-index: 1;      /* Stay on top of everything */
   top: 0.1em;      /* Stay at the top */
   overflow-x: hidden;     /* Disable horizontal scroll */
   text-align: center;
   color: black;
+  a{
+    color: black;
+}
+
+  a:hover{
+    color: blue;
+    
+}
  
   #frame {
     height: 200px;
@@ -35,7 +44,7 @@ const Sidep = styled.div`
     }
   .social {
     padding-top: 1em;
-        height: 40px;
+        height: 70px;
         text-align: center;  
   }
   
@@ -50,87 +59,75 @@ const Sidep = styled.div`
     font-family: 'Odibee Sans', cursive;
     font-size: 1.5em;
   }
-  }
-@media screen and (max-width:1081px){
-  position: fixed;     /* Fixed Sidebar (stay in place on scroll and position relative to viewport) */
-  height: 45px;
-  width: 100%;     /* Set the width of the sidebar */
-  z-index: 1;      /* Stay on top of everything */      /* Stay at the top */
-  overflow-x: hidden;     /* Disable horizontal scroll */
-  color: black;
-  display: flex;
-  background: orange;
-  justify-content: space-around;
-  
-
-  .frame {
+  .mobile{
     display: none;
   }
 
-
+  }
+@media screen and (max-width:1081px){
+  .desktop{
+    display: none;
+  }
   #profile{
-    height: 40px;
-    }
-
-    
-  .social {
-    height: 0px;
-  }
-  
-  h3{
-    font-size: 0em;
-  }
-  p{
-    font-size: 0em;
-  }
-  a{
-    font-family: 'Odibee Sans', cursive;
-    font-size: 1.3em;
-  }
-  #frame {
-    height: 0px;
-  }
-  Link{
-    font-size: 0.7em;
-  }
-
+    height: 60px;
 }
+  .mobile{
+    border: 20px,solid,black;
+  }
+}
+
+
+  
 `;
 
-            
+
 const Side = () => (
-    <Sidep class="backg">
-          <img id="frame" src={frame} alt="Frame"/><br />
-          <Link to="/"><img id="profile" src={logo} alt="logo"/></Link>
+  <>
+    <Sidep>
+      <div class="desktop">
+        <img id="frame" src={frame} alt="Frame" /><br />
+        <Link to="/"><img id="profile" src={logo} alt="logo" /></Link>
+        <br />
+        <br />
+        <h3>Nishant Gupta</h3>
+        <br />
+        <p>Nishantgpt618@gmail.com</p>
+        {/* <Link to="/Intro">Introduction</Link>
           <br />
-          <br />
-          <h3>Nishant Gupta</h3>
-          <br />
-          <p>Nishantgpt618@gmail.com</p>
-          <Link to="/Intro">Introduction</Link>
-          <br />
-          <br />
-          <Link to="/about">About</Link>
-          <br />
-          <br />
-          <Link to="/timeline">Timeline</Link>
-          <br />
-          <br />
-          <Link to="/contact">Contact-Form</Link>
-          <br />
-          <br />
-          <a href="https://www.facebook.com/nishurocks/"><img className="social" src={fb} alt="logo" /></a>
-          <br />
-          <a href="https://www.instagram.com/nishantgpt618/"><img className="social" src={insta} alt="logo" /></a>
-          <br />
-          <a href="https://www.linkedin.com/in/nishant-gupta-a30a3212b/"><img className="social"  src={linkedin} alt="logo" /></a>
-          <br />
-          <br />
+          <br /> */}
+        <Link to="/about">About</Link>
+        <br />
+        <br />
+        <Link to="/timeline">Timeline</Link>
+        <br />
+        <br />
+        <Link to="/contact">Contact-Form</Link>
+        <br />
+        <br />
+        <a href="https://www.facebook.com/nishurocks/"><img className="social" src={fb} alt="logo" /></a>
+        <br />
+        <a href="https://www.instagram.com/nishantgpt618/"><img className="social" src={insta} alt="logo" /></a>
+        <br />
+        <a href="https://www.linkedin.com/in/nishant-gupta-a30a3212b/"><img className="social" src={linkedin} alt="logo" /></a>
+        <br />
+        <br />
+      </div>
 
-         
-
-
-        </Sidep>
+      <div class="mobile">
+        <Navbar  variant="light" expand="lg">
+          <Navbar.Brand href="#/"><img id="profile" src={logo} alt="logo" />  Nishant Gupta</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+              <Nav.Link href="#/about">About</Nav.Link>
+              <Nav.Link href="#/timeline">Timeline</Nav.Link>
+              <Nav.Link href="#/contact">Contact-Form</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </div>
+    </Sidep>
+  </>
 )
 
 export default Side
