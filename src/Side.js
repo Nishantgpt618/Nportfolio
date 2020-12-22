@@ -84,7 +84,7 @@ const Sidep = styled.div`
 const Side = () => (
   <>
     <Sidep>
-      <div class="desktop">
+      <div className="desktop">
         <img id="frame" src={frame} alt="Frame" /><br />
         <Link to="/"><img id="profile" src={logo} alt="logo" /></Link>
         <br />
@@ -113,7 +113,7 @@ const Side = () => (
         <br />
       </div>
 
-      <div class="mobile">
+      <div className="mobile">
         <Navbar  variant="light" expand="lg">
           <Navbar.Brand href="#/"><img id="profile" src={logo} alt="logo" />  Nishant Gupta</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
