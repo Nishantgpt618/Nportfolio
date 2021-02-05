@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Card,Button } from 'react-bootstrap';
-
+import resume from './media/Resume-Nishant-Gupta+91-8077220024-Email-nishantgupta6688@gmail.com-Location-Bareilly,Uttar-pradesh.pdf';
 const deployments = [ {name: 'Todo React App',
                       href: 'https://todo-app-ng.web.app/'},
                     { name: 'School_Cart',
@@ -30,10 +30,14 @@ const GridWrapper = styled.div`
     justify-content: center;
   }
 
+  .resume {
+
+  }
+
   .deploy{
     margin-left: 5px;
     margin-right: 5px;
-    background-color: slategray;
+    border-radius: 20px;
     
   }
   
@@ -58,7 +62,7 @@ const GridWrapper = styled.div`
     margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
-    
+    border-radius: 20px;
 
     
   }
@@ -75,6 +79,10 @@ export const Home = (props) => (
     <p>Feel free to navigate to other pages though the navigation bar</p>
     <p>You can contact me via whatsapp,facebook,instagram,linkedin</p>
     <p>Contact number: 8791225390,  8077220024</p>
+    <div>
+      <a href={resume} > Download my resume</a><br />
+      <a href="#/contact"> Hire me</a>
+    </div>
     <hr />
     <h1>Deployments:</h1>
     <hr />

@@ -11,6 +11,11 @@ const Mail = styled.div`
         margin-left: 20em;
     }
 }
+@media screen and (max-width:1081px){
+
+		margin-left: -300px;
+	
+	}
 `
 
 
@@ -28,7 +33,7 @@ export class Contactform extends React.Component {
 		return (
 			<Mail>
 				
-				<Form className="mail container">
+				<Form className="mail">
 				<h1>Contact Form</h1>
 					<Form.Group controlId="formBasicEmail">
 						<Form.Label>Name</Form.Label>

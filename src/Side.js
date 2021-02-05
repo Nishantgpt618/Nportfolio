@@ -16,11 +16,12 @@ const Sidep = styled.div`
   position: fixed;     /* Fixed Sidebar (stay in place on scroll and position relative to viewport) */
   height: 100%;
   width: 300px;     /* Set the width of the sidebar */
-  z-index: 1;      /* Stay on top of everything */
+       /* Stay on top of everything */
   top: 0.1em;      /* Stay at the top */
-  overflow-x: hidden;     /* Disable horizontal scroll */
+     /* Disable horizontal scroll */
   text-align: center;
   color: black;
+  border: 1px solid black;
   a{
     color: black;
 }
@@ -28,6 +29,12 @@ const Sidep = styled.div`
   a:hover{
     color: blue;
     
+}
+
+.socialGroup{
+  display: flex;
+  justify-content: space-around;
+  
 }
  
   #frame {
@@ -102,13 +109,11 @@ const Side = () => (
         <br />
         <br />
         <Link to="/contact">Contact-Form</Link>
-        <br />
-        <br />
+        <div className="socialGroup">
         <a href="https://www.facebook.com/nishurocks/"><img className="social" src={fb} alt="logo" /></a>
-        <br />
         <a href="https://www.instagram.com/nishantgpt618/"><img className="social" src={insta} alt="logo" /></a>
-        <br />
         <a href="https://www.linkedin.com/in/nishant-gupta-a30a3212b/"><img className="social" src={linkedin} alt="logo" /></a>
+        </div>
         <br />
         <br />
       </div>
